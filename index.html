@@ -117,14 +117,12 @@
     </div>
 
     <script>
-        // Función para mezclar los divs
         function shuffleDivs() {
             const divs = Array.from(document.querySelectorAll('div:not(.logo)')); // No mezclar el logo
             divs.sort(() => Math.random() - 0.5);
             divs.forEach(div => document.body.appendChild(div));
         }
 
-        // Llamar a la función al cargar la página
         window.onload = shuffleDivs;
     </script>
 </body>
